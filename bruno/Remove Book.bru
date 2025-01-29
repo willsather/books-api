@@ -1,0 +1,19 @@
+meta {
+  name: Remove Book
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{API_URL}}/books/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Domain Driven Design",
+    "author": "Eric Evans",
+    "isbn": "9780321125217"
+  }
+}

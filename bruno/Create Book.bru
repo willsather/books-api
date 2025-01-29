@@ -1,0 +1,19 @@
+meta {
+  name: Create Book
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{API_URL}}/books
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Domain Driven Design",
+    "author": "Eric Evans",
+    "isbn": "9780321125217"
+  }
+}
